@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Mars Communication Panel</h1>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Please type the list of commands you want to send Mars Rovers</h5>
+        <textarea class="form-control rounded-0" rows="8" [(ngModel)]="command"></textarea>
+        <a href="#" class="btn btn-primary mt-2" (click)="onClick()">Send Command</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h5>Communication output</h5>
+        <textarea [value]="result" class="form-control rounded-0" rows="8" disabled></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
